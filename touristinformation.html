@@ -1,0 +1,71 @@
+<HTML>
+  <HEAD>
+    <META CHARSET="UTF-8">
+    <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+    <TITLE>Tourist Information</TITLE>
+	<LINK REL="stylesheet" HREF="external.css">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+  </HEAD>
+    <BODY ID="SERVICE">
+    <!--NAVIGATION BAR-->
+	<NAV CLASS="NAV">
+	  <UL>
+	    <LI><A><span class="ma-shan">Borneo Tales</span></A></LI>
+	    <LI><A HREF="home.html">Home</A></LI>
+        <LI><A HREF="aboutus.html">About Us</A></LI>
+	    <LI class="active service"><A HREF="service.html">Service</A></LI>
+	    <LI><A HREF="gallery.html">Gallery</A></LI>
+	    <LI><A HREF="contactus.html">Contact Us</A></LI>
+		<button id="darkModeBtn">Dark Mode</button>
+	  </UL>
+	</NAV>
+	
+	<section class="tourist-form">
+      <h1>Tourist Information</h1>
+      <DIV CLASS="form-container">
+        <form id="bookingform">
+            <label for="package">SELECT YOUR TRAVEL PACKAGE:</label>
+            <select id="package" name="package">
+                <option value="3D2N">3D2N Travel Package</option>
+                <option value="5D4N">5D4N Travel Package</option>
+                <option value="7D6N">7D6N Travel Package</option>
+            </select>
+
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname">
+
+            <label for="nationality">Nationality</label>
+            <input type="text" id="nationality" name="nationality">
+
+            <label for="passport">Passport/IC</label>
+            <input type="text" id="passport" name="passport">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email">
+
+            <label for="travelers">Number of Travelers</label>
+            <input type="number" id="travelers" name="travelers">
+
+            <label for="date">Departure Date</label>
+            <input type="date" id="date" name="date">
+
+            <button type="submit">Submit</button>
+			<p id="message"></p>
+        </form>
+      </DIV>
+    </section>
+	<DIV CLASS="MODAL" ID="bookingModal">
+      <DIV CLASS="MODAL-CONTENT">
+        <H1>Booking Confirmed!</H1>
+        <P>Thank you for booking with Borneo Tales.</P>
+        <P>Your booking has been successfully submitted.</P>
+        <A HREF="service.html">OK</A>
+      </DIV>
+    </DIV>
+	<script src="script.js"></script>
+  </BODY>
+</HTML>
